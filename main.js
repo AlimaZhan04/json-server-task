@@ -7,7 +7,7 @@ let email = document.querySelector("#email");
 let addBtn = document.querySelector("#btn");
 let ul = document.querySelector(".list");
 
-console.log(name, surname, photoUrl, num, email, addBtn);
+// console.log(name, surname, photoUrl, num, email, addBtn);
 
 addBtn.addEventListener("click", async () => {
   let obj = {
@@ -63,7 +63,7 @@ function render(todo) {
 
   todo.forEach((item) => {
     ul.innerHTML += `<div class="contactBook">
-          <img class='w-1 b-radius-100' src=${item.url}>
+          <img class='w-1 b-radius-100' src=${item.url} alt="">
           <h2>${item.name}</h2> <h2>${item.surname}
           <p>${item.email}</p>
           <p>${item.number}</p>
@@ -105,7 +105,7 @@ function inpEdit() {
   editedObj = {
     name: inpEditName.value,
     surname: inpEditSurname.value,
-    photo: inpEditPhoto.value,
+    url: inpEditPhoto.value,
     number: inpEditNumber.value,
     email: inpEditEmail.value,
   };
@@ -138,7 +138,7 @@ async function editContact(id) {
     let objToEdit = await res.json();
     inpEditName.value = objToEdit.name;
     inpEditSurname.value = objToEdit.surname;
-    inpEditPhoto.value = objToEdit.photo;
+    inpEditPhoto.value = objToEdit.url;
     inpEditNumber.value = objToEdit.number;
     inpEditEmail.value = objToEdit.email;
     saveBtn.setAttribute("id", `${id}`);

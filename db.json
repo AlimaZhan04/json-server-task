@@ -1,3 +1,31 @@
 {
-  "contactBook": []
+  "contactBook": [
+    {
+      "name": "Alima",
+      "surname": "Zhanbalaeva",
+      "url": "https://i.pinimg.com/564x/7f/57/23/7f57239f462f8a1a293b3e14360015d9.jpg",
+      "number": "-098765",
+      "email": "alimazhanka06@gmail.com",
+      "id": 1,
+      "photo": "https://i.pinimg.com/564x/7f/57/23/7f57239f462f8a1a293b3e14360015d9.jpg"
+    },
+    {
+      "name": "fdghjk",
+      "surname": "dshfghjk",
+      "url": "https://i.pinimg.com/474x/c9/0b/06/c90b068b4623b404e6f2c739f35256ff.jpg",
+      "number": "56789",
+      "email": "ASDFGHJKL;'",
+      "id": 2,
+      "photo": "https://i.pinimg.com/564x/75/af/c5/75afc508248222e8828542b05562400d.jpg"
+    },
+    {
+      "name": "sdfgh",
+      "surname": "es55",
+      "url": "https://i.pinimg.com/564x/75/af/c5/75afc508248222e8828542b05562400d.jpg",
+      "number": "tdrtdrtrd",
+      "email": "alima",
+      "id": 3,
+      "photo": "undefined"
+    }
+  ]
 }
